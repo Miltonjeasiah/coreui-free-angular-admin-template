@@ -1,0 +1,11 @@
+src/app/views/users/
+ ├── pages/
+ │    ├── user-list/
+ │    │    ├── user-list.component.ts
+ │    │    ├── user-list.component.html
+ │    │    └── user-list.component.scss
+ │    └── add-user/
+ │         ├── add-user.component.ts
+ │         ├── add-user.component.html
+ │         └── add-user.component.scss
+ ├── routes.ts

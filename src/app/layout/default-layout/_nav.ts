@@ -1,6 +1,13 @@
 import { INavData } from '@coreui/angular';
 
 export const navItems: INavData[] = [
+
+  {
+    name: 'User Management',
+    url: '/users',
+    iconComponent: { name: 'cil-user' }
+  },
+
   {
     name: 'Dashboard',
     url: '/dashboard',

@@ -1,4 +1,9 @@
 import { Routes } from '@angular/router';
+import { usersRoutes } from './views/users/pages/routes1';
+
+
+
+
 
 export const routes: Routes = [
   {
@@ -12,11 +17,20 @@ export const routes: Routes = [
     data: {
       title: 'Home'
     },
+
+
+
     children: [
+
+      { path: 'users', children: usersRoutes },
+
       {
         path: 'dashboard',
         loadChildren: () => import('./views/dashboard/routes').then((m) => m.routes)
       },
+
+
+
       {
         path: 'theme',
         loadChildren: () => import('./views/theme/routes').then((m) => m.routes)
@@ -51,7 +65,7 @@ export const routes: Routes = [
       },
       {
         path: 'pages',
-        loadChildren: () => import('./views/pages/routes').then((m) => m.routes)
+        loadChildren: () => import('./views/users/pages/routes1').then((m) => m.usersRoutes)
       }
     ]
   },
